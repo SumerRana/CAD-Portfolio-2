@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sumer Rana</title>
+	<link rel="icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEgjOUeoPj1bU-qWYQ5OjkmjlAYYUrN99zWOo9LJ_r0HUt99tfl69UFPhgzw2BcSfT9am_4WgiZ4o_Wwk0s0Xsy579iYxRRFA921rAYi_LRD6bPnurhnTGH7x2vz8p7QmZB_5-TzK7Ukz_4acCfL1Hz6WS3sA3wJ8JdvxHNDhVo3Rvdz3Rpnxl1gRno">
+	<link rel="stylesheet" href="style.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="stylestyle.css"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+	<style>
+		html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+	color: white;
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.logo{
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	left: 60px;
+	z-index: 2;
+}
+
+.header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+	text-align: center;
+	font-family: 'Marko One', serif;
+	color: white;
+	text-shadow: 2px 2px 2px #1a1a00;
+}
+
+.header h3{
+	font-size: 25px;
+}
+
+
+.header h1 {
+
+	font-size: 45px;
+}
+
+.header h2 {
+	font-size: 30px;
+}
+
+.header h4 {
+	font-size: 20px;
+}
+
+.heroText{
+	position: absolute;
+	top: 25%;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+.header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.45)), url("https://blogger.googleusercontent.com/img/a/AVvXsEiGinsMxLJTd831Q1M5-LsU_OLg0pu5OJVr8aniN8mXCvpZyrbCYE48W3g9nheB-9dmKEJXcEq-CJrFBVXavK0PRFqLLhtpZsEtbRuokAzsNBTQaHwG_wT52JZlc6W-P31z5tSFqj513mxHE-8HhmGkQZ6DcYVGek2vGLbNFYfMuRReYaeE0jzZF7Y");
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}
+
+.header p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+}
+
+
+
+
+
+.bodyTop {
+	z-index: 2;
+	position: absolute;
+	top: 100vh;
+}
+
+.navbar-toggler-icon {
+	color: white !important;
+}
+
+.navbar a {
+	color: white !important;
+	margin-right: 50px !important;
+}
+
+.nav-link {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.nav-item:hover {
+	font-weight: 600;
+	border-bottom: 1px solid white;
+	margin-bottom: -1px;
+}
+
+.navbar-brand {
+	width: 5px;
+}
+
+/*--------------------AboutMe--------------------*/
+
+
+.aboutme{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-family: "Optima", Courier, sans-serif;
+	position: relative;
+	border-radius: 20px;
+	z-index: 3;
+
+}
+
+.aboutme h1{
+	position: relative;
+}
+
+
+/*---------------------------My Wrk----------*/
+
+.mywork {
+	position: relative;
+	top: -20px;
+	width: 100% !important;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.mywork::before {
+	content: "";
+	background-color: red;
+	opacity: 0.2;
+	background: linear-gradient(135deg, #01010255 25%, transparent 25%) -6px 0/ 12px 12px, linear-gradient(225deg, #010102 25%, transparent 25%) -6px 0/ 12px 12px, linear-gradient(315deg, #01010255 25%, transparent 25%) 0px 0/ 12px 12px, linear-gradient(45deg, #010102 25%, #e5e5f7 25%) 0px 0/ 12px 12px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	display: block;
+	
+}
+
+.mywork h1 {
+	padding-top: 80px;
+	padding-bottom: 30px;
+	position: relative;
+	color: #ffffff;
+	font-size: 50px;
+	line-height: 0.9;
+	text-align: center;
+	font-family: 'Girassol', cursive;
+	font-weight: bolder !important;
+}
+
+a.custom-card,
+a.custom-card:hover {
+	color: inherit;
+}
+
+.cardbox {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.Coursescard {
+	border-width: 20px;
+	border-radius: 30px !important;
+
+}
+
+.Coursescard1{
+	background: linear-gradient(0deg, rgba(84,84,84,1) 90%, rgba(48,48,48,1) 30%);
+}
+
+.Coursescard:hover {
+	transition: .3s;
+	box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+	scale: 1.3;
+}
+
+.card-img {
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
+	/*border-top-right-radius: 30px !important;
+	border-top-left-radius: 30px !important;*/
+	border-radius: 20px !important;
+}
+
+.modalImage{
+	border-radius: 40px !important;
+}
+
+.ArtCAMimg {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/*------------- Testimonials-----------------*/
+
+.testi {
+	background: linear-gradient(25deg, rgba(241, 231, 231, 1) 3%, rgba(14, 39, 173, 1) 81%);
+	height: 620px;
+	position: relative;
+	width: 100% !important;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	margin-top: -20px;
+	z-index: -1;
+}
+
+.testimonial {
+	position: relative;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-text {
+	width: 100%;
+	height: 300px;
+	display: block;
+	text-align: center;
+	padding: 15% 5%;
+	background: linear-gradient(9deg, rgba(55, 55, 55, 1) 14%, rgba(0, 0, 0, 1) 85%);
+	;
+	color: #fff;
+	border-radius: 15px;
+}
+
+.img-text h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.img-text p {
+	font-size: 18px;
+}
+
+.single-box {
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-area {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 5px solid #fff;
+	overflow: hidden;
+	top: 15px;
+	left: 125px;
+	border-radius: 50%;
+}
+
+.img-area img {
+	width: 100%;
+}
+
+.carousel-indicators {
+	left: 0;
+	top: auto;
+	bottom: -70px;
+}
+
+.carousel-indicators li {
+	background: #000 !important;
+	border-radius: 50% !important;
+	width: 15px !important;
+	height: 15px !important;
+	margin-right: 15px !important;
+}
+
+.carousel-indicators .active {
+	background: #fff !important;
+	border-width: 1px !important;
+	border-color: red !important;
+}
+
+.testimonyHeader {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-top: 35px;
+}
+
+.testimonyHeader h1 {
+	font-size: 35px;
+	font-weight: bolder !important;
+}
+
+
+/*---------------contactme-----------------------*/
+.contactme{
+	padding-top: 50px;
+	padding-bottom: 280px;
+	font-family: "Optima", Courier, sans-serif;
+
+}
+
+.contactme a{
+	position: relative;
+	padding-top: 50px;
+}
+
+
+/*------------footer--------------*/
+
+.footer {
+	padding-bottom: 10px;
+}
+
+
+/*------------MediaQuerry--------------------*/
+
+@media(min-width: 992px) {}
+
+@media(min-width: 768px) and (max-width: 991px) {
+	.nav-link {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.header h1 {
+		font-size: 35px;
+	}
+	.header p {
+		font-size: 15px;
+	}
+	.header button {
+		font-size: 12px;
+	}
+}
+
+@media(min-width: 575px) and (max-width: 767px) {
+	.navbar-collapse {
+		font-size: 12px;
+	}
+	.header h1 {
+		font-size: 26px;
+		margin-top: 99px;
+	}
+	.header p {
+		font-size: 12px;
+		margin-top: 60px;
+		width: 70vw;
+	}
+	.header button {
+		font-size: 10px;
+		margin-top: 25px;
+	}
+	.testimonyHeader h1 {
+		font-size: 35px;
+	}
+	.testimonyHeader h4 {
+		font-size: 18px;
+	}
+	.img-text {
+		padding: 30% 5% 20%;
+		border-radius: 15px;
+	}
+	.img-text h2 {
+		font-size: 22px;
+	}
+	.img-text p {
+		padding-top: 10px;
+		font-size: 14px;
+	}
+}
+
+@media(min-width: 480px) and (max-width: 574px) {
+	.navbar-brand {
+		width: 3px !important;
+	}
+	.navbar-collapse {
+		font-size: 12px;
+	}
+	.header h1 {
+		font-size: 26px;
+		margin-top: 99px;
+		width: 70vw;
+	}
+	.header p {
+		font-size: 12px;
+		margin-top: 60px;
+		width: 70vw;
+	}
+	.header button {
+		font-size: 10px;
+		margin-top: 25px;
+	}
+	.testimonyHeader h1 {
+		font-size: 35px;
+	}
+	.testimonyHeader h4 {
+		font-size: 18px;
+	}
+	.img-text {
+		padding: 30% 5% 20%;
+		border-radius: 15px;
+	}
+	.img-text h2 {
+		font-size: 22px;
+	}
+	.img-text p {
+		padding-top: 10px;
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 479px) {
+	.navbar-collapse {
+		font-size: 10px;
+	}
+	.header h1 {
+		font-size: 26px;
+		margin-top: 95px;
+		width: 100vw;
+	}
+	.header p {
+		font-size: 12px;
+		margin-top: 60px;
+		width: 85vw;
+	}
+	.header button {
+		font-size: 10px;
+		margin-top: 25px;
+	}
+	.testimonyHeader h1 {
+		font-size: 35px;
+	}
+	.testimonyHeader h4 {
+		font-size: 18px;
+	}
+	.img-text {
+		padding: 55% 5% 20%;
+		border-radius: 15px;
+	}
+	.img-text h2 {
+		font-size: 21px;
+	}
+	.img-text p {
+		padding-top: 15px;
+		font-size: 13px;
+	}
+	.img-area {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		border: 3px solid #fff;
+		overflow: hidden;
+		top: 15px;
+		left: 125px;
+		border-radius: 50%;
+	}
+	.testi {
+		height: 750px;
+	}
+}
+
+/*--------------------MediaQuerry--------------------*/
+
+@media(min-width: 768px) and (max-width: 991px){
+	.heroText{
+		position: absolute;
+		top: 35%;
+		left:50%;
+		transform: translateX(-50%);
+	}
+
+	.card-title{
+		font-size: 18px;
+	}
+}
+
+
+@media(min-width: 575px) and (max-width: 767px){
+	.heroText{
+		position: absolute;
+		top: 42%;
+		left:50%;
+		transform: translateX(-50%);
+	}
+
+	.nav-item{
+		font-size: 13px;
+
+	}
+
+	.heroText h3{
+		font-size: 12px;
+		padding-bottom: -10px;
+		margin-bottom: -80px;
+	}
+
+	.heroText h1{
+		font-size: 18px;
+		padding-bottom: -10px;
+		margin-bottom: -80px;
+
+
+	}
+
+	.heroText h2{
+		font-size: 16px;
+
+	}
+
+	.card-title{
+		font-size: 18px !important;
+	}
+}
+
+@media(min-width: 480px) and (max-width: 574px){
+	.heroText{
+		position: absolute;
+		top: 42%;
+		left:50%;
+		transform: translateX(-50%);
+	}
+
+	.nav-item{
+		font-size: 10px;
+
+	}
+
+	.heroText h3{
+		font-size: 10px;
+		padding-bottom: -10px;
+		margin-bottom: -80px;
+	}
+
+	.heroText h1{
+		font-size: 14px;
+		padding-bottom: -10px;
+		margin-bottom: -80px;
+
+
+	}
+
+	.heroText h2{
+		font-size: 11px;
+
+	}
+
+	.card-title{
+		font-size: 18px !important;
+	}
+}
+
+@media(max-width: 479px){
+
+	.header::before {
+		background-image: linear-gradient(0deg, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.45)), url("https://blogger.googleusercontent.com/img/a/AVvXsEgHNwly63HVlVdo0OzlQxtEWnevzxamp_txJ7KS9AwdwVMlTtK9HoHYQP2iYklgrMmjlGliLCSRaw9m0B33MamppQHy9rRtbX4eX9_rKUzZYRQPWT7tZr9fcggCaZAEQTwYy414wpm7f_yy_bxq-rPQcWQqyvC5iImwENxPmkfwAvwetru6GHGp0aA");
+
+
+	}
+
+	.heroText{
+		position: absolute;
+		top: 42%;
+		left:50%;
+		transform: translateX(-50%);
+	}
+
+	.nav-item{
+		font-size: 10px;
+
+	}
+
+	.heroText h3{
+		font-size: 10px;
+		padding-bottom: -10px;
+		margin-bottom: -80px;
+	}
+
+	.heroText h1{
+		font-size: 14px;
+		padding-bottom: -10px;
+		margin-bottom: -80px;
+
+
+	}
+
+	.heroText h2{
+		font-size: 11px;
+
+	}
+
+	.card-title{
+		font-size: 18px !important;
+	}
+}
+	</style>
+
+
+
+</head>
+<body>
+
+	<div class="logo">
+		<img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEgjOUeoPj1bU-qWYQ5OjkmjlAYYUrN99zWOo9LJ_r0HUt99tfl69UFPhgzw2BcSfT9am_4WgiZ4o_Wwk0s0Xsy579iYxRRFA921rAYi_LRD6bPnurhnTGH7x2vz8p7QmZB_5-TzK7Ukz_4acCfL1Hz6WS3sA3wJ8JdvxHNDhVo3Rvdz3Rpnxl1gRno" width=" 25px" height="25px">
+
+	</div>
+
+
+	<!--------HERO------------>
+	<nav class="navbar navbar-expand-md fixed-top text-center container-fluid bodyTop">
+		<a class="navbar-brand" href="#"></a><img loading="lazy" src="logo.png" height="80" alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+		</button>
+		<div class="collapse navbar-collapse navcol " id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto">
+				<a class="nav-item nav-link " href="#">Home </a>
+				<a class="nav-item nav-link" href="#">About Me</a>
+				<a class="nav-item nav-link" href="#">My Work</a>
+				<a class="nav-item nav-link" href="#">Contact Me</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="header">
+		<div class="heroText text-center">
+			<h3>Hello, I'm</h3>
+			<h1>Sumer Rana<h1>
+				<h2>Mechanical and Automation Engineer</h2>
+				<h4>CAD Specialist</h4>
+				<div class="text-center">
+					<button class="btn btn-success text-white px-4 btn-md">my CV</button>
+					<button class="btn btn-light text-gray-dark btn-md">Contact me</button>
+				</div>
+			</div>
+			
+
+		</div>
+
+
+		<div class="container-fluid text-center bg-dark text-white aboutme" id="aboutme">
+
+			<h1>ABOUT ME</h1>
+
+			<p class=" container text-light col-lg-8 col-md-8 col-sm-10 col-10 text-center mt-5">I am a mechanical and automation Engineer. My knowledge in the mechanical as well as automation field gives me a wider perspective and makes me ready for the ever-changing industries of CAD, CAM and CAE, and Engineering in general. Being alumni of a Premier government Engineering college has opened doors of exposure and opportunities making me ahead of my competition already.<br><br>My primary skills include modeling and analysis in various CAD, CAM Softwares in which I have won an inter-college competition, that too during the period of my early learning.<br><br>The fact that we can design, assemble, analyze, disassemble, and repeat without creating the component or system in the physical world excites me. Making me Dream in the day and keeping me awake in the night.<br><br>I am passionate about designing and building machine parts and systems and look to further improve my expertise in CAD and CAE, and engineering in general.<br><br>My inner drive for improvements and optimal performance is complemented by a sense of humility to stay focused on my goals. I live by the motto “learning should never stop” and am excited about what next there is to experience and learn. Being a gifted learner I tend to learn quickly. The webpage you are looking at was coded by me from scratch despite being a Mechanical Engineer.</p>
+
+		</div>
+
+		<!---------------CARDS----------------->
+
+		<div class="container-fluid mywork bg-white" id="mywork">
+			<div class="container-fluid text-center">
+				<h1 class="text-dark">My Work</h1>
+
+				<div class="row">
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgQiJi3EjfGENI42BgIcy-1fgSXjLSiEm1TBLSBc0p2UtG8Tp5OjXpPNiaP-gjjI0MaEjn4nQVtXNCGKXPunihv9KhVXauIZ3CP5mJ2cg2wOdHdqK7iK89ClnHLCzwwA4XuNP4-CBCsgx4bxwGdYkuBbYXXumpW42temcKbCVMiGS5EG8Ts7eWrJ2s=s600" class="card-img img-fluid">
+								<h2 class="card-title text-light">Jet Engine</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Jet Engine</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgQiJi3EjfGENI42BgIcy-1fgSXjLSiEm1TBLSBc0p2UtG8Tp5OjXpPNiaP-gjjI0MaEjn4nQVtXNCGKXPunihv9KhVXauIZ3CP5mJ2cg2wOdHdqK7iK89ClnHLCzwwA4XuNP4-CBCsgx4bxwGdYkuBbYXXumpW42temcKbCVMiGS5EG8Ts7eWrJ2s=s600" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiWjrF1H3z0RppqvvjGPBLxeSZpogD46zKRSEA0SHKn3z_6i43l_rgDxrDYns5ocbcTRcHO6_WQOfgqOXFPwWU2C6TfCJYsZJIpg_2VZ18_zVsaxRakKkKNojyJbYOr4uZKoet9sRvLwUPs8u-_RS93CWD9AdjtMMetOHP8WANhRr2GYPA5piFmLZA=s895" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEg3a3CEQRISRnrBtLGPeSjrL5TCnefjj1_zr-8gbpc335q88AThAWUF9PgoiaKl3EKZoRwwvl-UAHwWKWWzho46d9KtZuFzvx3mP7v7cAk3ZnyqdT3xnkwvcdTQDOCbPRbICavJbpk3TQnoB5VSxu7vDpca6N0sr373CcOX7O7u5czTVZv-R3Gx9kw=s771" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhixZNQFInTokgDNxhAdrA9_N1vKwtNPo4z2JZxxO28Y3czlj11AtJV-fC09ZK1U0E4jkG1J6Z3RvAoM0wfZxVMCSySqL1JD3VDkqTeUkZct0HMjSkiXugS-8VWiE4tYhcXx97nADLWRusGnwirbpfVMeaAjaPkcjxsw0V3WR8EcxDJFwF7BV9TyBo=s761" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEi8Aa-UOgvmIJswFXMQU3XYvZiWtZO62SGCq0VKBT4M4YblSjpZizF8C5MkOz6Jt96aXzXSiJpfDAnofoHHin3WfBBPBANK5QnQuJyqHz__PsH-dz2rNMZ3AfRm-g2WWrdM2YaGOSRKOJ_U2564Phon3Sx8V3Z6pf4ovEuaG5RwKL_dHuD2hbwvadw=s874" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgRFgO8i5DZ_c35Xv6HvlDGCn3OYRcN5Su0RWEA0fKrIiCoDNrzkoSFv7IDVAy0dKmBdGpeFVZEKFvn6cudz7jShXxN_fqIHE_F32cRDBjeK79NMLsPHto9um4Lz-H4Wy9bO4-vQTYRLVOZCf_oVLbt9hGhjAA_QhkLsV4nFT1DGf-Z-Quq8G3wY9w=s603" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiK6v9N4IG7kB8ZsVdFoROQjfpcClIQEWlv3riG0jYa3NCjTeZxqqd7PJLqbV2CIdoKyEsJMweEPY57ygAJq4fAxTCEJU-pRT0mwH_3X8xozG2i02gAg5eX8x_Ew_OsT7M12_S4StOrUo7e-NtfKYHObW-as3SRgx56MEVUg6IFwXTIIl6oaAhSmtk=s756" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiX5Si3LMt8JqDGagSlkY2wZeRwdxIIDLL1QBXRp8ux6m27qD-LY60w9i43KRWwRewPeOeTroQcVyDRV9rEKXyZP7qKV9QGL8r_CpEaD5ad0s9vEVYLMNWziUX563yks39sRKEbRoGpCfs4l1CtlN_xtz5ryvxBqGlWTjWXyNt8yq1ekpT--Rei474=s684" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhRlgKb0aKF5faUCI6EzRLsfCyLgo7zpIlXjFGVrcNWP4jLXxIpwsd4oYCnBYNO-BNrIYOXbITO0NtTA6L5OtDPoMVnT5mMsQqTv9j635aP5Ja5palxFzPXQNliFFPNAxlhJ-vfCtLXpPky2YwKtOjBN4hvJx-emcxbcOWwBdisd2w14ydDHeuFSNE=s1920" loading="lazy">
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhoyJO4qAjTTp1RfERj1B4cuVkGA5kDmfCpqoG2dZYbAnRhBLGoeZnc6zRSZQh3HE5JTgsI057I8HFw_TPUjzzJpLeBiR_HS4RFBeCEzPi_zjvxbkJed909cocM_KVXnTzrIW7xwCrtDdQZoBAVuN0X3Rwp9DwphUgK2Lt1R44CKER_PB_-QciCXEw=s765" class="card-img img-fluid">
+								<h2 class="card-title text-light">CNC Waterjet Machine</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">CNC Waterjet Machine</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiXl6AZm-kzv5S49witS6KScq46phCKyxCfeNkPOq4Rm2mtFtGEDdCG8mOTZIf7WcaiqiYq5kFeOLHDUcIIeLIwaigAEwHULoKz8Stz10uDwyM_dzLaGlXK2Prb1sI6gqLgNgaBy_Zlek-tbD_AhZTRuBa_uMUCeviu1n1XVIjrHUvdYcWSyDym48U=s465" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhLQFI0jdIHP2fPq9IkKexz82Q6K6WudoIwW7sm-N9hDOtJgo1715Zoihy4ko1Yau8ZpJlchyvjxymkT_vkulKQGQyvNPFijR7xQ9br_DqvrJhRTbwHEGVkMhauq49CqXKVIe3bdENqBuMbI2LkWLdKXo-f6MrtPxFA3yyil0JgfryUj0Hs8-mZ72k=s465" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiP_-K9WF4haMMio3xKJhjHyczfIHTxjGMT998JZ6OoqcqK8MRbEP0vS-bT9m8qymuJt5AcCVKkFb3HQrH6nUTxf5rscRdkiZ-qchbaFbCSjasbZZU5zKJnSRMywCiegJ545Os8TwwkPT62QuigpL4vwzTUis2x-da_ufuf9Km5nPSCAYuRiIu5T_o=s465" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiCXNef8F7MUKK4BHET4rBL-DUAT7lu0QuUBpMtXPgtN_0Axu4JYh80TNxOAQKQAnOEOs3gK0ORmCbGmgMcGiWhzqoLL-D6eegITHMDkwMWzPC1uE53_wMp9Vx0x2lxXCXr8g2oKRqMCXteMRS3wIaMAkcBLGfFLtvKFMpjX1afMbbjqMHCj5LV-L0=s720" loading="lazy" >
+									
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop13">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEiSzq6Y7qmkQ3DXxKU8Kf7hoMTKdx5NxHCeR5e6RMJJao3-edIQg-FffRq7V6-huQAaV7ciVWwFEpNv4_BWpVR_1hnjptyzTP4y9EAa8I2mwnfwN1ZvWDXVwMldT1vyVs6k82R-ztzJFx_foOFUEyBlnKeu1smCtZt5tpF9WnLWQr_l6TARb8CQp40=s1091" class="card-img img-fluid">
+								<h2 class="card-title text-light">IC Engine</h2>
+							</div>
+						</button>
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">IC Engine</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiSzq6Y7qmkQ3DXxKU8Kf7hoMTKdx5NxHCeR5e6RMJJao3-edIQg-FffRq7V6-huQAaV7ciVWwFEpNv4_BWpVR_1hnjptyzTP4y9EAa8I2mwnfwN1ZvWDXVwMldT1vyVs6k82R-ztzJFx_foOFUEyBlnKeu1smCtZt5tpF9WnLWQr_l6TARb8CQp40=s1091" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEh-b9Aw4UzYpau7YrNEQFpY_Uz0xCCo3lDaI5SVVD_EzYSi062dRkkYNSqlWM8BSf6GI2aJHdvkwnLzIjbWklDx3L2rjbntpEftFpd3hjMA_D7HnhYZG4JbZeHLBSKPJK4_Ooo_w_AJJu-V34-OD8a5dhzmEqFCEaWRa9wFqWVVY_jFkubAie0XUSw=s978" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgPYgweViGL8XyQ3H1koEN2r5isTch8ry_LUBRMfkvT9dc8DBjuUriDGH9Yfr7nY7QVl4pl3OtLKHlit8S7pmNGQSjsgeFXSeE7cvyUA79v-jU2m68N1RCd_XHtpIMTuAHAFGVhdTuR4UmvLpNKyuaFFGS6JZJSlesG9JrfLlsQVlfqkRefswajeFg=s742" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiN3MG1Wsy4gKxy1kof9MfLzdKK_nXxuSlOxApeOTwH7y7eVPAzlTKI_yZkNmDYQCmAxByPwpBbkUMrUTBrZph_vmz7JHvqDI94Nm8eqA6HZlulBr9_O36mR0UpYumOq4ETwNqgDHoDOxe2xq0SzzJpvdiVO0az9kfdxwvKVEJTcYyp5FjpBY_RKg8=s553" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEh3-k1l21B7Qv_Jw3qkSYaoCtN78ZDbBKOVlMymiFMVKEqjO7_KQaxgO_kpyBXv7SxqwHJrFeByuHVW8ompT9HdLpAqr-ur7J1VvCUji7_kQZcwqg2dhWT_xx5-meKeWV30ChrHhNcajFNU2gcUkn57rjX5uGCtfeSvu60R8RmFBhF6WkYYRpig3iM=s615" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhEZ_IrLXbNodB2M-zZbGNargBHZhKaOKYHRccL6mwDtQ5QTMjOUenB_MTQQxcTzy9yKiefk7751EpuupxEjOqAbhyVrw5o4E3YR360uLXfvC5R4aQWDkKPpAUQsQSpuxf7o5sUUhJRjfP1fQpTnID7kIwLHI_e1qfREa2rUMTbX4gzbV9CEplu4u0=s712" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEj-1JI4P9BaMLWfD-BXEOZawTdfmivTjt2s2HTBAyR6d9EBUAQx3LSIXqOd1UM_WadgqPjaB3NiTsJ-uXSF_Nzts2xLNGzW1ZUDNp02uF3TIelFP0pAci-rC2EE0InL5XVBcKJOtNuPMcvXoG3S2-wWGlFVxh0WihnJnAbVInN14MvzNy5br8gwOAU=s642" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiSzq6Y7qmkQ3DXxKU8Kf7hoMTKdx5NxHCeR5e6RMJJao3-edIQg-FffRq7V6-huQAaV7ciVWwFEpNv4_BWpVR_1hnjptyzTP4y9EAa8I2mwnfwN1ZvWDXVwMldT1vyVs6k82R-ztzJFx_foOFUEyBlnKeu1smCtZt5tpF9WnLWQr_l6TARb8CQp40=s1091" loading="lazy" >
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjkR3qv_gTdF8H-7mwmILSnoBkklAkCpvE0ec7ahChiX2jY0YaD4WLPLLbQ1ETU3w4gA5rDz9eoO7ytnX54F5hAFU43EE1Ip7wyS2Xv8VH8fHkBgyC9gC5ypNiV1k-xdKfdMcqRLeva8fXkB9_f8VLKlDgGTvkzPKeeBlr1WeKJYMYlfnCWA6xyjPg=s1109" class="card-img img-fluid">
+								<h2 class="card-title text-light">Super Car</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Super Car</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhOM893hj1zX7YDEJ3a9GDlzjiFi9iL46gCDh-qcDzwi8WrG2BgM3V02Qg9qzJ_fwSLUEoKK7Lv6-uZG31rVTDEVBtBS1k9EC-WWDBcB7Jv0FzqSaZpKT1t2Grf_fWib_ktSjJeEOFR1hGzrZiIGEJu54Oz3rxlEMrMnpQvbKV2DZfCQmddElbOxlg=s1037" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhtzGwlR4PKgPdKaukN4Ocyi8abwubsZTuucsiQSU0vXZ_wKDfVrHywZ5avFr7wnl8NCr-Gg8rDf2vbD3abQE69QE0S9cZagvQaM6J_q4dnMbDzDgLd4vZDLVaYPc86rNkyQHNO8Vs_xAhWueJbFmP1nqpoJL65D6-7K5fGTRGyL85rnYc-o3ghKF8=s1309" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiYcQDgF1pHKI54zc0fvOTt2eYIKImQ01TZ4cBrUrg9OmLooTJ7AHSEinBiXmEg7OmvPqTwUVVS1Ane5lBhewWEXTdMN1er_tE1jCGezYZEZTSsEaRKZkhk1CGVd2uO8BT4eZOWFs5EZk9hGauxYahH-P_Kt9X1vWchJjgZUgoDSWX3MDXHgdz5Vt8=s1107" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiNElN7P-0VmeJLbCVu9pNY0I3UhDjMYleC3kGNwgmGIyfM0uGFiralVhVWhtYOTKj2iPZhUhTaKmeQC4rWSqjeGd_E3KkTF_Ruo8SryweOAKvxgpHUNIMXNoEG-vbs4q7M_o4QuY-x59jgVZo3iCakz5t9nYSP2PFDacfULB8IdHMVOSZVMdmc2tM=s992" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhN6-yRT1F2F9iXy9Vp7B1_M8U4QN1Hy_7ZmCN3jRBATD25RydpOeYkoBMls1Pa82GoWAIVKigF-sWW4p7vzy3SwAsSUARqt4OUMqB5LvEhVuJ7f8Ju7S3xqtpao5c-8zt8g_UaeeYYyJrlbTaksRinw9f2cuKXJd_GY4DjIIMP7ejmjyK0E0erv2U=s1120" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiAuVqBX9Ytq0vkgQFKP4EnAPgLOrm2AzUpX0XTJ0FtS1B7r3zE779K3N289MhQrKKDrFbYPzeDwcLnVqxBgddYEqAx54THcjb2lglk0wa5NV0ajSV80BJAHul1CpqTcxnUEKTRM9kESGrx3p4cU_ilJRzls7RSeOl0Qsne8HrQOxNKgcXnyxxs2eQ=s1095" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEicibt5c8AzdlYCbCTZB28K1H6Lc1mm9n6Zyb70ytBnOLG6LRaJPAeaoN-VYYuZaEi5gRjFvO-WMoyyiY9X1S6sAQqncHpbCOp8mkVEpdgBlHmGIxANhiHRhViswH8vNRobAIiZ8K-fojC5hkbWzrwLUjFAGZReo7XW32Ye9GYIJjfqRPfH66oMtr4=s1126" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgEL86R7wR53Y3fKlwOdDXluxKEy9-SMiREvBvPttARkQtS8l6kKvXDnkRLpg9SP8xenrlS0yy9cijkradE2ec4i8CLLqgqAs74AAm29q5pUDmt-KeIdC2OfoHc4xKdfxqRT1sRYJI9TnfKiujsHbms8b0yfqih81ZSTL54q4dAeZNcml1KckhYwr8=s1268" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://i.gifer.com/7zBw.gif" loading="lazy">
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEimKmYbi6m7JKb-6_IxL6hyfVK0trQvTXDf9rj7g3uImCOQwxcVpfFyy6VuudwlDaHctika-qQ4-KRuDg_EKSPJ5G05T2De5GJF9U5M6JQIVChVln1incrhvmRgeI_F3a8-LRQzDup9MEknHTAGhBC69NAXQc7AVGAPJPL6MElXCrqCEQp7RFls3i0=s1057" class="card-img img-fluid">
+								<h2 class="card-title text-light">CyberTruck</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">CyberTruck</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEimKmYbi6m7JKb-6_IxL6hyfVK0trQvTXDf9rj7g3uImCOQwxcVpfFyy6VuudwlDaHctika-qQ4-KRuDg_EKSPJ5G05T2De5GJF9U5M6JQIVChVln1incrhvmRgeI_F3a8-LRQzDup9MEknHTAGhBC69NAXQc7AVGAPJPL6MElXCrqCEQp7RFls3i0=s1057" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgdgcAOFdVuZdBLsJ3YhOFVyNqfidHS1jacDV8O3fRdKqeqAPbdv8r0vePsR0xorwEvTldk1F2UK6jCujV--2Zm1v8qr1ALMa2rAFbotvUWS4baBiliqH0aKuaT79WJcbojXjmJkplta7buvAzjpGOQ8sqeTRdBrH3cSLfaQpq1noWqMxb6F2QajfI=s1186" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjrAnW98WhvP2mhvpm_rHjpb7OK8L_lTv6u2VPJvCPqzOduuCh8ArOdAosdkZyqi25TYOP7XxuT_ZNnoCLDlmxM4F9hhvS248r9ZL6-dabltmGLatBjnzKEZpAcJgPha_w8QgTgMKzXM-AYszEKVaEoL8ApYqsOLoHEbrofO6QM-a_A3MAzCdVJ7mg=s1061" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiCdpsD6Js02Tca_Hbn7gVtmJ4_noTwhaczeVhyPbcgYzegPJWQXoJNQVtMbb6BnSn7N42h0ywH78GfZ5cpjAxr1XyZGtKIEQ8g8HyO-WyPtDITNRM9SWUGk-QJrOythNS5njUh2Xw7hFqQLezSbueo1VvxEZ8zcyDvOw0MV3t6WmnZlwRgJbIJ8YI=s811" loading="lazy">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEibSoIejmdPSZWAtfHgpvRgl6mqepL9MQlpSyN3aPBkigPy7u7m5iJiGI6fglGbwe5vA5g6jbRgSPn9gdAyqTH8zr9qLxQOSKTxv2MOV8Uatq0jfjfGNSVJvgO2ynNv_thr29Iwpr8-0PA-xNpM3A8jgjNTkcjQfjbzp2_6aNOBf8s0s0ydyjJGqhc=s968" class="card-img img-fluid">
+								<h2 class="card-title text-light">Toy Car</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Toy Car</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEibSoIejmdPSZWAtfHgpvRgl6mqepL9MQlpSyN3aPBkigPy7u7m5iJiGI6fglGbwe5vA5g6jbRgSPn9gdAyqTH8zr9qLxQOSKTxv2MOV8Uatq0jfjfGNSVJvgO2ynNv_thr29Iwpr8-0PA-xNpM3A8jgjNTkcjQfjbzp2_6aNOBf8s0s0ydyjJGqhc=s968" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgBqmfOv_fEyqwg1a-3D4IEe4mQ2mT_KW5Za5g8hsjL7doMZ7ZTQPyogIpGTapRtYfZVS7OkCCfQ-p5phkg56LJfX3bHsLwL4b6wly42uVOCeX2huycAZobjAW0iVGJ-EXKV2sVIjRdGZxYiojzdFOYh6MkpUFIJ8wLGOKELHDhfS8Xz_XfsFnJz88=s998" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhTR0O1ipdIhZU8HwPE4CVsejkmq6wy1wG5H-DbGiP8aEQwmr1mBI3qTIctNmUKsTQF9rCZVivSy8ClhIsZr3alAAM4aJu-oVFHDc4AIeEP_yLFKdj7gVoTX_S6gVStnk4OmyNb_Jz-j-_f2DgeqUI9VFAKcCb5nKmlLLg9AAZKkUcwRpnJHBNvuZA=s855" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjbLbOPgwv3Ur34lPZUmswkiYKxv-Lw0i0V2EkQAyuLaWrbDNYvx6eM6P8NP_MmJE0rCYi2ONhE2RKLbNn2z2Dylxu8lweMjyEbnNR_C2Ge-G-7nS6j4F2CIL6t4Cd3t-VmemjJZwQNJtkCTb0fWPbU5bJaFeCAmhp1iX26z5D_qT5hjo7njqzw1Bo=s1056" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgsQfI5f-Ck9TY-_PlrVG5wKRlQKZCLLrG3zZqdNoC0eyL5FPMzWANvqgFkhwDP0J_fvrtv31r5KTm1YRkz3aI-IJcZFopXqWbEdytTVy_f8dc52PLwOSMyLLIST9h_EiXPiQ3K0qbU84zcN6jK-Rw_xLqgoHW6D_kb598hcbLuOvnRp7R4ruI-LTw=s947" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEj6MeUWddVoaEuVxSSJlAPiWRqXZxwWBfv88DJGHN1t_A443_1L9rTjvv6ZfMc3KegosRXgd1yYO--AnCXAMMjVEqag1mtPsc9Lio26-E3AJuU2PfEV9nNWRaRtxSoddv6wYQRI180LOl07KZp7Crp38OoxADZtt1rcR-9kV6cpq6-QULc45-_SwoA=s1280">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjvjZh8VZOK6oR-BzC7nYdF6a0ETerqxvYNtHRXauPDWNtve42TQ7FhZvAUFW-OvA8xOkWKthz1zjqqgoLfFcBileEllwFdca6ouEE86E2sctyJV0bkxEKUhwqUGMqXM4iku9pX_pkipFKG7hJNLJe1QvK8149XZTIlDJSEh0KF1ruf3mIhySuGlF0=s689" class="card-img img-fluid">
+								<h2 class="card-title text-light">Disc Brakes</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Disc Brakes</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjvjZh8VZOK6oR-BzC7nYdF6a0ETerqxvYNtHRXauPDWNtve42TQ7FhZvAUFW-OvA8xOkWKthz1zjqqgoLfFcBileEllwFdca6ouEE86E2sctyJV0bkxEKUhwqUGMqXM4iku9pX_pkipFKG7hJNLJe1QvK8149XZTIlDJSEh0KF1ruf3mIhySuGlF0=s689" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEj067j0bdU-t5YKPcWpOzbpS1jTXYPdmMlCQMUlnz0UoM6TdrCdEdx_IL69YIb82aE_Ul6AeaHHIJNJ3f4f-1Hogrt1xtzx9hXlIjvb4V4r_4Ce7DyA8_DWZ2JNoDdTsTGbCPTxUuDF1rnJy8uA-dgyT5AUvZJskpdUEptXC6G9cv9CT9tiCR2QjV8=s805" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhj_GxSmP8EeWUF8QfOXcs1CjL8oG-Vth3rQ_J3mvqNI0jvVeZsCpP5pmqZAstn3h3orqEwqdR9S76WAOKPRp9IN2jJd7Aw8GcVcROxuBwDEl9bDnemsl8ejlFIz6xPNIWaHe4-piLC15go_ARRSXA5IUToJXOLcZR3nY1kf1zh-5_llAyxrFzlU8E=s649" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgsWBTlFyFdrw-fyJR63gkTQnGGz68rRi1mGxKDaLrB_Le41AEGfjhw_FuLgMZgbDfWZccHNmiSQDDx0aJ_81dCV3B-nduMy7JR6U83uYAYWC-Zeq3EkafV9MoXBJH6ozSjEMtn0JCnlANBU_LBUkGVyxvHGlFoR6AFbWrD5Z8nzsPqP0V3E18oDZ4=s670" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://static.wixstatic.com/media/528ee6_8e90ac3a24724644a109b2cdf7f0d172.gif" loading="lazy">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgFGBJ-KkK1Ok-baQ6boN6xhf40XzknQmp3rNVL6CNz5w6u4w7iXawHeEGnQiAgzjdetV5568QbzRFSAleJOiiim8GHnVd6rOThiWfzQQx13lU9qJDsmnCapht8YIllVmX4nxEt6YYqljYfGiF11nLN5KLsAOKpUBLxVMejTufcz-nNHOyo9OiqrZ0=s589" class="card-img img-fluid">
+								<h2 class="card-title text-light">Shock Absorber</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Shock Absorber</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgFGBJ-KkK1Ok-baQ6boN6xhf40XzknQmp3rNVL6CNz5w6u4w7iXawHeEGnQiAgzjdetV5568QbzRFSAleJOiiim8GHnVd6rOThiWfzQQx13lU9qJDsmnCapht8YIllVmX4nxEt6YYqljYfGiF11nLN5KLsAOKpUBLxVMejTufcz-nNHOyo9OiqrZ0=s589" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiFMhW1aQl6ccEtsRAXnD7rmmMybU5EDM_d7N18uXdLZ_MhNX96_l5WKLccuwLOybx_QkBmA6a3b1ukh9iLI4-uGidYOmOmCyMArDyDvW32MK5qgOEHabl9NT-bHr_MTtRvjXShb1ykXPXH6BPpwTMvHg-Q02IIEqEQMlJQzKHuR2460zqG1qVr8Nw=s749" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjZXeyVzClAaIwabUuDZhbkhJB2sBRVtclJZW4glVSArBnpEVYez-OOXU5P5XqFf8CKRGXKMzMpeVoITGOxbbS2f7U1Of-_1Ln5LGqkceKOW3zJXZ4dHf_1rZNAMJKRjAYsAnV2CDo2gAMf-gg_ivDILeG_nWCdcNKyOUfYotzRUntZtXg039r7e7g=s720">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEi10yMa23EgQRtQJJlHA33swX_dGlqeFFTrgsiBp3y03Tdn86h2SBEbKlHeJXtS2rIKdf6DnFKXNclBy_bpOks0EuPfhbiW35O_qMhAxf4SxgXP4lA5Okjcywy12TKMuThFtJSK6kNbmYfbUeMTVHW4BSOyshp50N83fy3lwC5CQrG9ScLKGnGEUYU=s703" class="card-img img-fluid">
+								<h2 class="card-title text-light">Super Car Wheels</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Super Car Wheels</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEi10yMa23EgQRtQJJlHA33swX_dGlqeFFTrgsiBp3y03Tdn86h2SBEbKlHeJXtS2rIKdf6DnFKXNclBy_bpOks0EuPfhbiW35O_qMhAxf4SxgXP4lA5Okjcywy12TKMuThFtJSK6kNbmYfbUeMTVHW4BSOyshp50N83fy3lwC5CQrG9ScLKGnGEUYU=s703" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjjqTh_Yw3MsVDRzwXgN7DpgStdjodlNZA9yM0IGdmZieROEVa584Tw1cnzklBnqQK98F9ex_3GYKNwMD3PMD_fhl-f7_yjdekkVE2YZ_ikM7NKh4-wOJW696AnVUkEtl9rzrGq2dMAtXYeVgh3Xr7kvt2xzFKOKvu0-X5nR9AxvQUe8X5tkFunzEc=s714" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiRWgGAFD_dEqzOmQiX9gyLQ4Ol0YH6LhTE3KgzVPp6mMOhfpeH1xBUKko9J1xhd2g7_CfObhUv6RMCCPJSKSjbJ47HDGcSC-tOOiuNc2qakJH5f6C6AENLkbejqLZb3ZzkYiXs8_a5vKLAk-ruRIs_ZjRgcycpy9xn9sDEpNEqarcYUTZqhqqD8QA=s726" loading="lazy" >
+									<img class="https://blogger.googleusercontent.com/img/a/AVvXsEhGWvPUX0MomyS6_wZcuT6VxmLm9mqveLcSYCn-nkESl6tfteRPwDBkEVmpavGJImOFTL9i--Q6sUub_-UvMWi6P8dJyPKWAQnSoYJTz2NPPMBZMIAhSeosYW_bHpYQ_Wxcw6qbwSh2prk7VEPdZ8mi7xL_7iQ0ERLu-OeYkhyRG3VOF5fCQnRA5ik=s713" loading="lazy">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Lamborghini_Aventador_wheels_Dione_Forged_Alloy_in_Gloss_Black.JPG" loading="lazy">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEifea8YjL2S9uhKMTwN_GRexZxRpO8qaZJEIZPxellCdBWlJ8OEtFV1vA838_xDqevGZbVBtLVWpb4R2kmoJZXUWjMTzI5l8KdgRzFVY69OLTMml3wC4Z4nn1-I-DQfnQtK8_8WqxUowAVKYKiinszPguVbIerdUpCU4qqpzZI8J4sVThz9oFTtOlY=s715" class="card-img img-fluid">
+								<h2 class="card-title text-light">Universal Joint</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Universal Joint</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEifea8YjL2S9uhKMTwN_GRexZxRpO8qaZJEIZPxellCdBWlJ8OEtFV1vA838_xDqevGZbVBtLVWpb4R2kmoJZXUWjMTzI5l8KdgRzFVY69OLTMml3wC4Z4nn1-I-DQfnQtK8_8WqxUowAVKYKiinszPguVbIerdUpCU4qqpzZI8J4sVThz9oFTtOlY=s715" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgUVyFFrt5zccuc7UzCNgoy_suLrBPIoxhtf7_mh6HBjWyk-lY9V492uiQlgxrL6JaTo8JDsca2m7HenL2Iuz-GRS05uPTitOO5BHhqCE7gOjhLEpcr6Hcr14a5p3hcGCzvS6iGwQbfdCRfIv281f3ZnLFvHldBtQAQfo4QgDcs5w8G-SYkLUS2hl4=s751" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjWtria58u0J8p0QJo2CVHldQ8VwrZ8xdEfM-zOlBZYyr2AfVtH1o3R288C8TmIgsCJv8hSntqRx9T9AjJxSTFtLyO8Vb268eYJo2EnetVQw0TyPDflPHeZHbO5I5JIwj2cC9KtNaGtKyD9M83O8bY0DQyZ_xLbQQ4fMvo6_3MCgWZFJkpFSPSP72Q=s616" loading="lazy" >
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgBWVYqUzFHhD7GJpUzO3d-rV5IoOmphl-6kR_WpDa4Bl7dsRakCUNqzMY10x3r9t_1X2pHFaT0Fy_8Ve-9-uUvw00hKhEESOrsXROJOhWwG3dgK9sZQyfvswnO_IEqUBcW9nFglKgCsQzPbOBbfYkQ6t6CFegmwwrpNDHJoF5uQPaLzzNlxxlMPb4=s705" class="card-img img-fluid">
+								<h2 class="card-title text-light">Piston Crank Assembly</h2>
+							</div>
+						</button>
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel3">Piston Crank Assembly</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgBWVYqUzFHhD7GJpUzO3d-rV5IoOmphl-6kR_WpDa4Bl7dsRakCUNqzMY10x3r9t_1X2pHFaT0Fy_8Ve-9-uUvw00hKhEESOrsXROJOhWwG3dgK9sZQyfvswnO_IEqUBcW9nFglKgCsQzPbOBbfYkQ6t6CFegmwwrpNDHJoF5uQPaLzzNlxxlMPb4=s705" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhM-gxy8bOr3rjK9zmOyjJC4eLkFFZu8G0feTFPBmDPdQyQViExscXdLuDOq_Hri5R7CE-etQ3TlHAEaM1hHjlU6PboUhisDOhEYwfBD6W2nkEk0GxRUMTxmCP5Du2uDLZ6M86Ff7fgJms_MtDOOIcp5qPAEo2FpXt82lb6_SVfUvT5gZDA97ulEqE=s761" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEip2viiVltnd5LyB3sq1081TW1e_war0wra3NtrXgEDuUQs7DGwfT7pqoUlGPQvzQHU7NSwSkB6QPjb8svzOCxzBlm0PUU7MTO1ko-6JJ0t22H7m4y3ChHixJHyx2sCakVykRhg3VtvKQXMdX95uYGkdRyjf6yVI2FRESy-hHBw7hIbecqxacKVf5o=s1132" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhwsSFTxkybf-L4g7svopLfFPbr1F1rRge9_-JmmNPuKLa3qZ_ltABPoIVq8oqdt6kna0KmQrXtUH38XeV8h5oXOASgDlp-JzOLvlLgoP7-6lCYjC7sWU_h_Ki_3DVr4FgpKITVdEa5NCpG-TU6mibc7PSIysKxtyiAcJyzNHDAgAwOCdIk4WMd2oE=s854" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhxY65rFQcMoU5FtcyB34Q0C9-MmQVowwpnVZHpxgQ-wgLQh2nqgFxL_dKCmFq23iZhRy8nB4vQc-HamSmudkEcbSHO7tl0y4IQz606ZOx2fE91Q-H946S5YDNUVRf3zitg9rg7uUMX0TW4cnPEFleJosLk5DhYXo9w62xPu0JNSWBsM8PXkjhrY1U=s720" loading="lazy" >
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgU5mNm6SL5Gn_7P9zzdIzIZGtoh9B_jNw3SnTCrXwmj0s4tYkFD36uxaHFemdPm1tIJlETxHzEAMkW312VoZjjVvO_JL2JjI0Mg267SnRYJTsmNQFjRbb2i5QHHzjh8lgNXaBYMbb6shyt_yYQ_yDdjw12t5UKMnwreFxjYjyP6kWRnOc9Qmfhr44=s686" class="card-img img-fluid">
+								<h2 class="card-title text-light">Oldham Coupling</h2>
+							</div>
+						</button>
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel4">Oldham Coupling</h5></h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgU5mNm6SL5Gn_7P9zzdIzIZGtoh9B_jNw3SnTCrXwmj0s4tYkFD36uxaHFemdPm1tIJlETxHzEAMkW312VoZjjVvO_JL2JjI0Mg267SnRYJTsmNQFjRbb2i5QHHzjh8lgNXaBYMbb6shyt_yYQ_yDdjw12t5UKMnwreFxjYjyP6kWRnOc9Qmfhr44=s686" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhWBO143GoCe-hu6I-njgnGhDpWAVkloqRmLdE8-IqscPtfmCcHbAZrmA_JdtOOLb9d0U8I_o8L7AWZb1c2HFuG5clOO3OenfYSJOa9d_ovsPvjmOfSQ4Z2x-4N8d2mQ8BmaCUiXAFAKcGHSw6K64pUB7bXiUV1vmolwMBAQKm6Tg6zX-KhlqSoFkY=s617" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhoDd5m1C-cXBK0kG9-OZzEiKbedEmTg7QZ2umDoZ_V3Ul-gRM13ZavDTNagkcBFNS5oWRwWY-ZlWFAV8bhKuq35T7MoT-69RLMVFGey2Aka1ExA5zC7zs6eDHW83GvR_m8mVccXriFQhUTbArGuWpQF8mkK3FbbhGJ0nCU_NE_sFfP1DbG9YbQkns=s616" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgNXGwa-g09sTx5aIpdjeMWBn_fDffCB6Zx-6oZ10Td8ttjdurgnv0kg2tUG5UYVHZT53fDykoeSHnKZtV43kfycJQz7P1janwisj-Q9TIirrIsUJZ7JgOQoHfiK7FUg1l_sw5T4-62tiOCybU4xqvb_8sLImfwUxptM38RrcOktWKrS7P--vdPiZk=s628" loading="lazy" >
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEi9LmsS_JO9iU1Z6dBRqXH-gjA6NFjKIegEVA6Y52w-FQn5JO6-l174jEsq6U75EZWOa5nbNSQUJqiBNXhQkHCRLuGzZbeYrASECpPzkWW5byo24PRRFMkL9xIWtBVVIU_lo1mQl9jhEQBRBVdLHHfrhDbCOsjSzY1wqxIspt0lMY79W9j-Gg1Gbs0=s772" class="card-img img-fluid">
+								<h2 class="card-title text-light">Injection Mold Base</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Injection Mold Base</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEi9LmsS_JO9iU1Z6dBRqXH-gjA6NFjKIegEVA6Y52w-FQn5JO6-l174jEsq6U75EZWOa5nbNSQUJqiBNXhQkHCRLuGzZbeYrASECpPzkWW5byo24PRRFMkL9xIWtBVVIU_lo1mQl9jhEQBRBVdLHHfrhDbCOsjSzY1wqxIspt0lMY79W9j-Gg1Gbs0=s772" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEheJ_Vobkr2D4s_PAUvLDJJsciT7DV70rKHbr1hqzB0j3B1fxuiXkhUukqgwjYpLamPa5QQZbXQcAQC4xYlD46wTyCjsfb5hFfmfjIrHsP0r6_8asVLzTyLFoGebybxoMZie5pPvLzjctIm1FLCfBpJPaLGo3FGP7q9dLFsBYwLU_5raOsEMGcjS24=s878" loading="lazy" >
+									<!--  Rubber Mold <img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEggP0Pio7hz07fGwJL5h2OQDmzzqz2DGv7-I6fdUqquWdcd0z-z3qXnZk9Ek6HZvZNmLj328qdFSwnG7oSA59AqX2jQ2yf1I3zQasHSjV9GLLOt6E-oUeQK0rNJv0PzozWMcc38PxpjGD-6vlMpGieWyKA0DCpPPRPneyMD6JjxESnrewgEHyaZFek=s640" loading="lazy" > -->
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop14">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhd9LzCcVg3UDOhCB9sSAKGCH75L6ms054aQji0_AvZRqtsTlJUsl2aGTnKJRinD2yx2ajz7nZBaGvN0U-gUGuh53PHHNpxVMwt8IF1xExWk11cPQWtKUo7LpvJj8Y4SSbbtLsNaUZ-h2jSGkf1k10b7qRIeGSejXPpuy89BVUEqRunXZ0Ba1F5j04=s1018" class="card-img img-fluid">
+								<h2 class="card-title text-light">Rubber Mold</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Rubber Mold</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhd9LzCcVg3UDOhCB9sSAKGCH75L6ms054aQji0_AvZRqtsTlJUsl2aGTnKJRinD2yx2ajz7nZBaGvN0U-gUGuh53PHHNpxVMwt8IF1xExWk11cPQWtKUo7LpvJj8Y4SSbbtLsNaUZ-h2jSGkf1k10b7qRIeGSejXPpuy89BVUEqRunXZ0Ba1F5j04=s1018" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhchisjVg6k-FZjAFbAMz9cq9Q-nceKYu1NFh0PcznqGvmJBKkPlqSqUxrpFjwDGsDB2tvcxPRhV4tauCt_fQzaeiE7ZAuYu8qTVBkymwoWaz7PrMaIHRHVMZ1Ob5XCZTJQzgIyge0vBR-wvigCfkvZf8hFsUjVHaTl1egqODOPNxg4cRyX8lL2PFE=s836" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjMRJmXyt_vaXvDmMoHfkBVKvKxrqSez44lp3EZZ0iEfNLum22akQwGvjwBDH3KZc8DbSBBO6c97h1ffy6PfqVrArRKighvMt3PbnmRUYXUZiM0_jQRNldSF-B9mKGRopCjZlmgyxLIowdd1BmcwgrlTkiA_qgOXiAbDjEbbi8FHyiW6LOkwRDzd1Q=s910" loading="lazy" >
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop15">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhITh5t0kauIIJ-dYeJe6jvZ2nEp8VNNzpfWO0ygKAAJH-uUujZAOuPADkBsYStieK1EV5c3I0LQJOmv5B9gXcs48GmIe-A1jSVqmIRSEx4zwGyU98jkJ4Nl_4rnoGOB9Zw4BcwwZF9_A8uBgfRds3mb5YpQtjsGxDhiAZetWSKwCSoN4b5seGJpc4=s592" class="card-img img-fluid">
+								<h2 class="card-title text-light">Core & Cavity</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop15" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Core & Cavity</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhITh5t0kauIIJ-dYeJe6jvZ2nEp8VNNzpfWO0ygKAAJH-uUujZAOuPADkBsYStieK1EV5c3I0LQJOmv5B9gXcs48GmIe-A1jSVqmIRSEx4zwGyU98jkJ4Nl_4rnoGOB9Zw4BcwwZF9_A8uBgfRds3mb5YpQtjsGxDhiAZetWSKwCSoN4b5seGJpc4=s592" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiBWRB4QgAt1fIh0Tu4NfR4accbC7mr7NJIRNEEnKXrGzzmXUrlLxEvewaH8_eTir6QLUwOwBmZ_GbaPWshYJksBQXN-Qae0D2Snz6I1AEAOqDHtNi8Ks3wzX83blHClduE09_vWgT8t3O4oBSboNDLmb5JbIq4bl8YPwfSsQQfwhEu3n3x5UQ5kIc=s577" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgPJDGmagxoDb4hbLM63tEn5zqKSZYVqUZ89w1g5ZEVXtJle7S0wzzsCOL9dvjECM4w9bPK4DNS5aSt3C6XyrGZeZckT0TQS1-hhBqEZhhejoshcvQfOvXnfJ1tgakX8bepkH3xfyAs7rAWZ9bHHjpRIx-_aEeJtFeKVaAJE-efjRSTkE2QPEXFuPk=s713" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiYVr5KLY8RRgrup9L-QB3XEQbMdi1VLZk7ttQyeFCwiBhje3YW2UN3Afn44ooTYz5PZWPWKGTZzKLEtxG4totE4pOoBwl9B6ipIY1BnD6aG2dsTTLA14o3hzcGaW3MLMekZwc689e5xjrF9Be1zqdKYW2ifkWndj7qcmDi4vEVPL_cW9A6HAsL_hU=s739" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgjoK7_698ydCDgVZ41oA_1l0wIUYXfH59SwEFQJddayu0-P6ZF9rjs8AS66x4Xl1q69dM8AofCs-2pekYp2BSw-voH_A8tBdvJpDP8fq5S1iw9S1CJctsqcQKk7YnD8bf7bzCtW35s2XlkZ1rb417zJD7JYCfPfzUCDFHcFPyC_x-__nVpi1PW1UY=s829" loading="lazy" >
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop17">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhIrJS2ZB7vILOwqyKauVM9uMYM6dwVJXrkAaY26xYX7pFbeIni1of_mNP-jzzL_wg3tlfBgadbOzu3kPxU81yVODOgEK7KChyxyXsEpxj8bh45akJyfLRn7LtrtB6GK9pNNgb0XK6P6M59Bs3DTX_7UD8mDoxweKrQ0KQvCBqrjzCCjeUHuta4HZE=s601" class="card-img img-fluid">
+								<h2 class="card-title text-light">Shampoo Bottle</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop17" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Shampoo Bottle</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhIrJS2ZB7vILOwqyKauVM9uMYM6dwVJXrkAaY26xYX7pFbeIni1of_mNP-jzzL_wg3tlfBgadbOzu3kPxU81yVODOgEK7KChyxyXsEpxj8bh45akJyfLRn7LtrtB6GK9pNNgb0XK6P6M59Bs3DTX_7UD8mDoxweKrQ0KQvCBqrjzCCjeUHuta4HZE=s601" loading="lazy" >
+
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhmBFJ9I7jFfv6T21KPfMx5B-O970lmcWrCpGxi_O1-ynm3LZddc-_3Id9fLVzvbpdB1QRn3Z110PgRt-D0v9cGMKM5lODu7V2vQWTYRL0HlZ1ulUoKhDZL4s9jBsLreCLqIf15dijCtlVjx6xv54oP-vY6FxJj1KaS3YDd_ml5KiQlvQ2_E4hEcio=s662" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhc_yszpVIH_s9u_CmeubiD_-9UpswTZsWtVK1JlkOrHXqOSAaSUmpudzfUO62I0R9BW3pvQdrbtCzrHTo2rTJV7sIVJgnAYa1exntqLAVQkfLiB8bbC-shOYBSKtAeKcxXgouyGrszsuXU25ZarIrL0EwOanVjVsKlDtO0IeuCO-vzOM8DU316OQw=s638" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjGUNAakGKcnFDLxAD_5G6uUgYCzHnsTbQOLUv1Fqaw4DVUumxHzCpBBiAZm24HDVw3x9rpvsFXOXdKxlmcBbeBedxkirgKqRXeBs4QDuhxgcVYHIXvGO2G1j2wIuwhAM4ZEQREGV55WDaL9WYL_JrDpvho9d17XoGAZ9RJJgrSA-HFcrnqVK0A9kI=s1528" loading="lazy" >
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop16">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjIACZRG_HrcIj3376chtsKDzvA954eS63wDXVPAqKyCQWtRWsChcRuKeb-p3cZSnoOT2-RZCXpxZ526NbxUHqWYTAYLKqeGadUaI9Eolr9nnBTjb32eatu0Q3r_000xq1tphxYYQWJSuWkO2-_MChVaf2uWE0GuXuah5fbGCE7uZJe_nigj4ei9PE=s518" class="card-img img-fluid">
+								<h2 class="card-title text-light">Advanced Model</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop16" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Advanced Model</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjIACZRG_HrcIj3376chtsKDzvA954eS63wDXVPAqKyCQWtRWsChcRuKeb-p3cZSnoOT2-RZCXpxZ526NbxUHqWYTAYLKqeGadUaI9Eolr9nnBTjb32eatu0Q3r_000xq1tphxYYQWJSuWkO2-_MChVaf2uWE0GuXuah5fbGCE7uZJe_nigj4ei9PE=s518" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiRa1VYuS9GAnO54RN1dN5OSspVHuXsP6Ns3QP5F82XpMFhNuCGU4AAMTsvFpnErND-mdyrqv8iLiCCAsoHp_Axhq5N3DCTwDswEFSItB3CWSYg42ZzVRH27IJ8R9TyEsrmftANffXjB44IUn63qwvqk873ZZ8ANh02l7-0K4thhcPssjkq4ifKZG4=s745" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjQD161t-PH8sjbnHWtdLYSD7Bc5uT6_8Tq0urd3644f396Or7Q6akYPOKQ6Jt5FxcDP_yvM5-nVwGqjFuPzxjsCc3-r9xqjk7er_1Ltj15rf4j_s4WWvYYjdVV4HJ0GQOZbG70FLqzD_OZttAnoB_EgGmcr_98tbqVYd_6_iyAKAQvXySWj_rGbik=s663" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEh3EFKy5pUJNVBeCKhSdnb9oASNodN7CMR2DTXITnp0_3znzGpaLW_oLmhhVUB9lB4rCIKG4kjc4bqG_zsmmbEcO7CZZWA2XzO3ONNkdD3q9gc0fHOARtYK94rphbmocCB0sa2aWsb5OPtPmsGF0-wJWcgBBdh_fqK5f1Oni8gIezS0y85wICFW5IA=s1096" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgjU_71WQyjK_t0KyvENhpVNgRdQuRSk0LcV3Nc08sM025eCDO_BaLXStR7lbwQyKppPNaCR32gf263g5E0B2MYHY4KULr5cpNoaifHz1ZG0Nbt3y6bMIXBfbuuYfOOLyGgZnS3TKvg-lvIeLoFZSFZ7vx1OkI6PDF8qG0omNpjBZquEcy-3NBIlPg=s1920" loading="lazy" >
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop18">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEiafvOknHcGrfzEryWmuPtMMs-gVvo4hYZhwfH9Li5MgE9nkqYTVjXclccchsJCiaUhJ4H4hKFbj62qnK034hKWAykvBiN7_rlUtWvtNfygJ6rJxWyFBeneqN098rWJHWuqcp6Qw5NsKk-MoahHgXhkRoLZJv_Hif3UA0RrKcvMK5YrTkGqZbWz7Aw=s574" class="card-img img-fluid">
+								<h2 class="card-title text-light">Bicycle Wheel</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop18" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Bicycle Wheel</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiafvOknHcGrfzEryWmuPtMMs-gVvo4hYZhwfH9Li5MgE9nkqYTVjXclccchsJCiaUhJ4H4hKFbj62qnK034hKWAykvBiN7_rlUtWvtNfygJ6rJxWyFBeneqN098rWJHWuqcp6Qw5NsKk-MoahHgXhkRoLZJv_Hif3UA0RrKcvMK5YrTkGqZbWz7Aw=s574" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgVOJQnhNyEBRPnjt5M0CA7y4Qu21phR8Su9Amfx4T-tL_34pX3vv9h4VNSOcBxPpGUK7xsUMokHUWtqG60IS3SphcrHpy__Jm0IuorveMhBhM4tQ6IVpTVtPbWwKd2RN_pZkQt78qlwbrGs4_22wyHCwzQMYnCP7Fr8f3sHKCMrydRuKSGhrYFRVU=s618" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhBi32uS6G1-J6uSPVrQs7DKqSbQKBztWB-bkNdHi2wcGMJnsNIwEvvp9I44Hs3S_6b8fD1-VyqWm8MJlWj_eeaEIZzv6gujhXoStCSk8PIVGpsr4nag9Avp8RUrCkea8DKr9pW6kSDGe8POgDpZbrL6eZJ2RBkfabqIfSsVgisdI6_PiLjX9UVjVw=s1528" loading="lazy" >
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop19">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhnHlq7kgCRKHio1KlIXpfJWQUV4F5nF_CSdIJatEUn4P8eel9__A6kOfU31CfNoSPqOebEZBmegk9ZuArkcB6wKyUSLhPYPSrMJJoYm1Tnhqsr2WgTHFSMLNpWKHrW7tWxg6eYttHezQdxETvBkn2ULsIva9fTEvf0xwktIk9AEFag9bgQCBZcew4=s533" class="card-img img-fluid">
+								<h2 class="card-title text-light">Rubik's cube</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop19" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Rubik's cube</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhnHlq7kgCRKHio1KlIXpfJWQUV4F5nF_CSdIJatEUn4P8eel9__A6kOfU31CfNoSPqOebEZBmegk9ZuArkcB6wKyUSLhPYPSrMJJoYm1Tnhqsr2WgTHFSMLNpWKHrW7tWxg6eYttHezQdxETvBkn2ULsIva9fTEvf0xwktIk9AEFag9bgQCBZcew4=s533" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgdlCWtild-xIOT1bYjRyUrsec1thdfxL8_lMHAF4u8ta2o0OeQE5_jDWLQJmA8iSrURiYD40_n46IjuG3ukLR8kkIiH_ngi4SFKGDADf04H_GBl9O_7Y0PpnUc9PRDgDSFPrXhAZdbwfK7JOk69s85H-97TxJECCe2I6fGMcDmCHuyN5vIyRhrWAQ=s989" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgf6yNYCRXDyDXL-1yaujvL-bnFVe828IfUVBP0inK7m-wbL3SVDqrWQq5sU1o6Rnz0u0902lrfO2nNmtjP-EBcjjrYikZ1eQMIeAPjUAWrSrJ0tyOF9wpJywLK6-M4mt9LZ-AwBC9XwckIWTzT2LCEMMvEUoKARVmp_0UL6D8_PtnD8fGU0o52db0=s720" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjywhVg1hMr32JU5dBxQJy6AELY78V2jtSsHHGZ-XBmGR_yVVCt0qdzqJfVswz2gFi4DAIWj6jy5hdYg_IUN5milAMstc9DtVYudRXcwLSzvoGoOV4FLlhnpXp0AA9LJeweO0wu6JBLZvCyHYg7KUdhG-6AdDgwhN-NE4lUBwFeVCAywrtp-r0M6n8=s720" loading="lazy" >
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop20">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEi3ELq56qfxLnxBFiuL3rNKC1yooc2DNsRJIGnjgDYhh-HvZhFLKkAHPb0saOxlhZklF1kuEog41ZoMKCfwCHQ2HhQLfvbaq44shS1KzNXOWuau5nnUUOaYbWJKU6SHcn0GUEZRhSp-neMQuFSBaw3oBY74iVP8-v09ya2JeG9GaDOgpa6xr6Zrwwk=s568" class="card-img img-fluid">
+								<h2 class="card-title text-light">Mechanical Part</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop20" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Mechanical Part</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEi3ELq56qfxLnxBFiuL3rNKC1yooc2DNsRJIGnjgDYhh-HvZhFLKkAHPb0saOxlhZklF1kuEog41ZoMKCfwCHQ2HhQLfvbaq44shS1KzNXOWuau5nnUUOaYbWJKU6SHcn0GUEZRhSp-neMQuFSBaw3oBY74iVP8-v09ya2JeG9GaDOgpa6xr6Zrwwk=s568" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgD6Z-ER3Plj_0xx3ydfptku5mL20RbSBo-qOhxojv4I1wHNj2xolMOdrQYg8x-WH1v4aAaMAjgLW_y78eBAvWQMVf6mhGGBf-v9EnjSOcJ2m_ZQdmKQ9WMdMTowNyqxrqYuTyUQwo9ZzvU37p7IRDoENGT6gZl-o-OGRuU4iCujTJCQNsz-AOJHvw=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiGR-10jydRXS06uXkDURfGqZgirFYU8nZr1-Ro5PAJoQMzNpKaycP9rOes03pjroZau2RFkhEccINIkyLt8EY7wyXfGzX5WnhBjHcTPyAyjdTI8p4USo5Qlc1d_YbxB7OGH4Ar-k-TlNb6gkTS4D4SusMplOUyw1uNOw6CV0OW4r9eLC2Hu4Wr910=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEg3j0pQ_dcF-tMUYCKkuBPGH6F0IyUG6EbggkIZ-M1QOyfVpcVW2ezysY1LxgbBKcwDero287ZfnfNT1SNJjJiiDxsAX6Yk5vcj7vRAhHInUBWJkFoSgmDrxKPqVkyA_OUS8rgqixInr8x18FBJoaRnvER-zp-ipL26Fc1DYgJT0M2-voh3wg8fBao=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEg3j0pQ_dcF-tMUYCKkuBPGH6F0IyUG6EbggkIZ-M1QOyfVpcVW2ezysY1LxgbBKcwDero287ZfnfNT1SNJjJiiDxsAX6Yk5vcj7vRAhHInUBWJkFoSgmDrxKPqVkyA_OUS8rgqixInr8x18FBJoaRnvER-zp-ipL26Fc1DYgJT0M2-voh3wg8fBao=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgfmBUUnOjyLDKwds9Hwifmiy0uER3dUhaMHFA2xe9bPSjeXnaMMhM0x1p8buq-HgQ22ieMDRLX17CZSH9GkFNJ86Zmjzl3yxHha9KXJ6MbLlk3AXCfoPoYN2fR_TDYJ9dNb_L1gGnotWtxat6GrmSM2yee5OiOPjta1sxrJz7-iHjPELpvojaXb3M=s1100" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiR3JYRPcCCPrvVNKmVKCM_0Ehs89zRFuaE50E_iEd_zL91qe1qOaJyina-e2WQETQLq9Okv69-VWK6y_DFogTwfxpk_c39yhFO8R3RqjZTr_jIRjuJp1QUBgOkjvFPH64NRmdl_mGhEioyf3aoyFnesjljrETXvzAOYrrmgn6MgxNMF0s0Zo6_wz4=s628" loading="lazy" >
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop21">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgg8fk54k_wk57br1AY74wYaTVp9uNuY-ByisVnZGnQvMBh8p2Hs-_6n9hug7Qi95hqMJ0Yo0FSQIgWQ9N4Nf6bLNTIEteCggbRgR2VM93mbyIcErXP6ufx2O0flhAiowwrJKdaqBIR1Jt2-BeMHsx_MpYe1LCLSYbOwvx7FGwtngZvhuf8GKwwUZs=s505" class="card-img img-fluid">
+								<h2 class="card-title text-light">Football</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop21" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Football</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgg8fk54k_wk57br1AY74wYaTVp9uNuY-ByisVnZGnQvMBh8p2Hs-_6n9hug7Qi95hqMJ0Yo0FSQIgWQ9N4Nf6bLNTIEteCggbRgR2VM93mbyIcErXP6ufx2O0flhAiowwrJKdaqBIR1Jt2-BeMHsx_MpYe1LCLSYbOwvx7FGwtngZvhuf8GKwwUZs=s505" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEj_fiSpm8GCUsvhqfjRZzD4i-yTVZw5u3eee3_C3rwHOfO76OwteywwHFXFGpSyPdPD4DPwlhWP2fJdfw5O-G0V1s0OJ5BwSacwDpiIDs5eTgyXFcz81whG_Opm3n4QTLJKY0B2PESeeLbzrJQp5f1xaYzX5rEuX7Y4GmWk21DXqAPkGVH2edTdbXM=s554" loading="lazy" >
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop23">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgk1y9sB3t-s-wZ2FQi9ovfqRp72L2ZkV43r5QJ_b1mOdrzntOmMg10SB5rq-qQU6MIece9SIvxYBJ6jTTvMuEqlxP_nEssultjNJ2II9fN6pAn93vQWbBm35iEcmF7GLQDru14dGHRLgA_lHD2hyJc8VZp4f4qupQIxWU8ll_0p70dJe9fszIfYd4=s551" class="card-img img-fluid">
+								<h2 class="card-title text-light">Mechine Part</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop23" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Mechine Part</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgk1y9sB3t-s-wZ2FQi9ovfqRp72L2ZkV43r5QJ_b1mOdrzntOmMg10SB5rq-qQU6MIece9SIvxYBJ6jTTvMuEqlxP_nEssultjNJ2II9fN6pAn93vQWbBm35iEcmF7GLQDru14dGHRLgA_lHD2hyJc8VZp4f4qupQIxWU8ll_0p70dJe9fszIfYd4=s551" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiqEoNjxXiMdrEKxBK7h3eG_Z9JvVqw543A7ygDkpulRJAxB_7LAjOJybtwW86Kpi3E_TqHF6Ewjf9h9OWXj7S6urr0TZUmihIteUEEjo5f73b4ErROe6Yiu6McAMPuuV12-Wp-XEQPtGi10M2IRlWhGDRCSo5W925r8pQQAf2tXdJcIMYuUplWK8k=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgiwC48XyyXEBakpIaozFv5VF-N6qk4lcvI1BeMU7o_sttCj_A8iyjJhkONFC-L-5vEvp6yXCDFmodsPj8m7HjIRhzQPxRbn81n7IwBzqoWo3oZSHRX_0Kdwi4Zqi3sBDK7Vo3VEBeijZLSDJU__EzrqvW0EddpBrtjXGKXt-sVYC9vmcPgHNNMA-k=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhv-ZHeDw3Da6WcOJUhCCkGj9ZBycEPobaQ0bFDsmoSR2JJaQ6jCb8A_LZk1kVmtj7N0F90EcL6lfgjBPsADxD_6kbsrJQZ9FRXuNgapwnCxrexQt81vmWjYpNoiabEaeFSWdQw2UsxuUm3xKhMxE_LmZC-ny-y-AVPcmitBah1iBFAoXJOeyktWV8=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEi7EAU_YV5huITS-unQXbKHnBpua7igwoOVsT71vVHPGoY0rKU2DBTBvURKjygPeAwwsoHZli_lkQH7RRAbOFEeDO1BVwt4tlTTevHYD_NlVhEYF8-pagWU5ifMS0c8wO0l8SEYq3n6KVbCR4ZVRPrU0wdFc35ot10PPAI943OOM97PqfZmy6LSvEg=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgHgf4OyIUHl-Yw4mNAYQW8xtk97bLIQIAAUaAPZ272-kWNfDVDJBFJzjqgh8VoYmeU8N3X97aF2NAJBugcRUegl0_jTf4CZThQ_-CsuxfxuYHElkLHEgnK9slo965X8m2AR-JAWZdlldXzSxzb3CAefYTZVeR8NL-veAiqqfkAyNLCnSzOS3UXYlw=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhhz8uYNFFunvvV-R3apL7iY8TtACdS-58Tgc3wri0avWiupLJmILE_d2aDLKxrCyoksvtjBSMySBGvKx3LrSigAQOEmBQhM0amCbj3Ju4zote7x3XGfZKyElJhVLkZ1zmaG1A2AsCz0PFNxuUdBqb2lD1t0qCOMACo4Yr8iJhJFk77zdqstJUYA1w=s720" loading="lazy" >
+									
+									
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop22">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhPU0vliBtFOjfo71sBIB7aWkaI9JbY_R7_NptXs3BzOUd1BILo9YHCfuUsN-Bnw9v32STqM625G9taOYgcFBuylNHCZqQKmlZo5LEMiJMB1a7MJwz3S-gzT52-IdlLwfUO3NXfHnbSdeEyJAQzTs1u8vDURtfOQkGAyTHM0xnkiJvka_4cIksMdjE=s651" class="card-img img-fluid">
+								<h2 class="card-title text-light">Press Bracket</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop22" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Press Bracket</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhPU0vliBtFOjfo71sBIB7aWkaI9JbY_R7_NptXs3BzOUd1BILo9YHCfuUsN-Bnw9v32STqM625G9taOYgcFBuylNHCZqQKmlZo5LEMiJMB1a7MJwz3S-gzT52-IdlLwfUO3NXfHnbSdeEyJAQzTs1u8vDURtfOQkGAyTHM0xnkiJvka_4cIksMdjE=s651" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiyLPd_wOrTH1EMbr8NdYEs3xZ2u1IGIXQF5uOKHQKrAO_Ui7dyaB-SvuQi7rg5vCXFPdBzfo-waMCwNxakn5eyxxLw_Rhqlyhr5WiYW-GT4wG0RwyW3dbiWnwVzXes9teJaMYP2DxH9gIBBdpoUcH6H9rwC5ckFd5FMqv4EQbh0qcSf-F9TYntdiE=s701" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEg62sS6t3RMZERCPMtR71KjZEwe2e_Wqdj3QqyqGB-__NqFMx-A3OcKNriUPdQ1GWc2DqPGYv4PtJKt1IJRps0Zu_LN578xF0R-SXjxl9tLTV50lXATv6i58fBKpMOlwZ8Y2MVPLiquxY7cqZCFXnur-ST1522a3zwQ8A1Ph5WAuPbJb1sTek_AMQs=s699" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEg62sS6t3RMZERCPMtR71KjZEwe2e_Wqdj3QqyqGB-__NqFMx-A3OcKNriUPdQ1GWc2DqPGYv4PtJKt1IJRps0Zu_LN578xF0R-SXjxl9tLTV50lXATv6i58fBKpMOlwZ8Y2MVPLiquxY7cqZCFXnur-ST1522a3zwQ8A1Ph5WAuPbJb1sTek_AMQs=s699" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgwL3gfOm6BPg4JZkx53lH93yA1dOu4lZOoW6e1NCpl9l1GYR1irP0NZ71PKHnD2lGqJZJop4oG9axVsFOUNmcIvKljrocKFkoVtyy-nXXRRH1ZWihy8mxpCHOfQorVLVpYfi22ylSlSJw-Bbono1vj_fVOoE7YxGpBs2YOYF6w-mFstAtCZuBudrI=s1280" loading="lazy" >
+									
+									
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop24">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhl92n791YQnUrSo2vJohBpKQZ3N12CWnlSBrkPNn5VqnhqTJZTHu9wLcdsL-t5bTEeqSfnNzdMw6dMWpJVpIiPlTgq-2-uNxnXL6PO5WX55lDmKZp6bYxmtMLBRRl1eFG4Jvc7B63QkTF5K5F7AOdJAGvdgEzXUvYr-BzybeLm3Hd2sF0DVPRWlz4=s568" class="card-img img-fluid">
+								<h2 class="card-title text-light">Fastening Bracket</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop24" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Fastening Bracket</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhl92n791YQnUrSo2vJohBpKQZ3N12CWnlSBrkPNn5VqnhqTJZTHu9wLcdsL-t5bTEeqSfnNzdMw6dMWpJVpIiPlTgq-2-uNxnXL6PO5WX55lDmKZp6bYxmtMLBRRl1eFG4Jvc7B63QkTF5K5F7AOdJAGvdgEzXUvYr-BzybeLm3Hd2sF0DVPRWlz4=s568" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEiX8jK7HmGGJzWjcSEYXILpVwEwB1Bih3KZ62PQgb4bvjdR9pKHvb59N--Y1XB25FUZg0ku9Eo3iuMziKTHBEVPIXbbCccVAm0Qa2C4ijlNAp-5dLoNZBM47AEIiBpViIvifDkl34Ina3yiTQJW8pXTRduEJoLx-sFoEkgw85pI084HT27p1RwtORs=s1100" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhNU4c3gb4QWU_hgrThdzxtV9DBrUQeLR9RK815e1tEh9uhRU_oynPS93zEFxrbTqwgRbKsa6vwYFTG67FjQfOqz7_DtnP0MhrRBrJCrtxf7iPP0awUOgI6PI42fCVxTs4d8T8RFHkLDtg74V_8p_NLMG8o5GFyyb1Zmid_W0VzFYdIGuz-SMe2TcU=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhl0mDeF_zv6keriYPzMkA98TSz1IVkEF0QJGGf2QKNg607hSmgWY1HjDAwGe-mL45X4xQ5ciKgWz3P-oCDCR8fvLq-6ra9CKfxGMkVzr9Mi9bqT5MJu32478de0qZ3GS9Xlmrl7LleeSvTZ34A8RT0JGlML97AGeWmvvIQBiYxwjgfxqBobY3zBX8=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgDe9Aa1zDw9VasWJUaqh-zYFO07Rxrla9rgwDZiCxbJx6cfe_DEI1LnExdBKX68np4qGXnERyhwMNjECroiDjKyB_0CpGLODPtuU6Yd3lA93CMvJZs0P3--nMxHLsE-4xa7mIfyD_sFTE_8oVn5tf3RZrh3BFQN1CHQaGbTlPawAwMymt21LKx894=s628" loading="lazy" >
+
+									
+									
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop25">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgSTb5iZFENznRJ_rYqQu8yB5rnzKxXqpzfCWmdKLQiaPrh_VTmttQOQtOD2xlb8XFKhWZpbfn3y_GgpzFCLYQ8f2eGxHiPfCXGzA9NDd6JAr5dx3QotMAiKPXUG7QoLMyRf9k7WlxgOQrxQ_pBuJMOL4iWraPrt9FiClrz2TmnZwKnD9nuU4MG1Nc=s744" class="card-img img-fluid">
+								<h2 class="card-title text-light">Vortex Tube</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop25" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Vortex Tube</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgSTb5iZFENznRJ_rYqQu8yB5rnzKxXqpzfCWmdKLQiaPrh_VTmttQOQtOD2xlb8XFKhWZpbfn3y_GgpzFCLYQ8f2eGxHiPfCXGzA9NDd6JAr5dx3QotMAiKPXUG7QoLMyRf9k7WlxgOQrxQ_pBuJMOL4iWraPrt9FiClrz2TmnZwKnD9nuU4MG1Nc=s744" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgmXMJfrFJn7R_leqMr62BrT02mu9a6v8_0_bp872PgSdFQwbIcuEJeschSB5twJ2ZUnsZStrwxGV1rRnflvgmorB9WGhxUwQKEy7vb-ZsruwIRbFIsGdcA6B9_PwRtVz1zIQRmo4uaKdz75bRnRg7CjHKkfnkHuhzVJ6XDnhFXJAXSiyRj5inYCRs=s1148" loading="lazy" >
+
+									
+									
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop26">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgWufkKvJ8GlDdSDwk4lz3XdEKLEWSaq1q4JiYEmzFPlQg_AakdBlGxi92l9IBJJkkr-hKkRFVmzpC2EZg0hS6NAA6dYRsy3RsQx-F5ig5k1NMXFP4eC3SAlkrUv47ArSiAZRtbpavpk9LkQkDW85eqlmIcbELzf8gMS-AePHkkeejC-7mkU4TUrN4=s568" class="card-img img-fluid">
+								<h2 class="card-title text-light">Sheetmetal Cabinate</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop26" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Sheetmetal Cabinate</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgWufkKvJ8GlDdSDwk4lz3XdEKLEWSaq1q4JiYEmzFPlQg_AakdBlGxi92l9IBJJkkr-hKkRFVmzpC2EZg0hS6NAA6dYRsy3RsQx-F5ig5k1NMXFP4eC3SAlkrUv47ArSiAZRtbpavpk9LkQkDW85eqlmIcbELzf8gMS-AePHkkeejC-7mkU4TUrN4=s568" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhKKhcx6egtn15KCguFmKNO9zXQIc0n9uWiLS_JQ8pGuejlO0kKtL14LLATlChZtmWg4l1MsixS3cP13_yg2fEotWuOQtKEZb_v492ERfhgoRvgQHjfL7w_o0fo8GXfIGW2IITfxg3KSoWpF_aZx1rMwGswo528L4tHe1ipytWkJdbg3qVY5tk-5VA=s2048" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgZzjx8bQcLD_v12rHzVNgyD4G9YcASOsfR79yhbyS7e3bivusCPidfTvp53y_lVqwd_SolbSuJI9le1oSWFY1ZZLii5366-4mkYCdvdplmokCz30IMEE9ilxabwu-k6Hccfr9Jk73vGWFOP8Ptac1p_I06__8QMUzUXkhOC6WimG42zN71s5WygY8=s720" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEg8itF14XwEy0ofXnQ2RwW9oGA3hqogLYohUPreCpsXPkP_lE-NybM4mCklG0BjbLSM8q6JCq4AKbk-6K0Kp7ciNaoOpZnDIJ-V4rk4Eu7jus6Titw51Iw4KIlq_y4iigX0hKWgJfG6uEU1_KZExOAKrR-burdUOjtq7UDvkIwVAUCjs2kk0qnIpJY=s720" loading="lazy" >
+									
+									
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-18 d-block m-auto cardbox">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop27">
+							<div class="Coursescard card bg-dark">
+								<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhYBNHddpGdpDha27MTD1kDTlQvioT7bBZdo774FdUodYYPqImw0NlhQl_Al21wrSzLpqP1_M0kaDTBzujKd3fsIakgEzhtmuUrRL28TdDxnWSyb2mVS1Hp5-cmXHV3C65IUdskvQLvaSMCb4rIq2bl2uyMJDZnCs8qPp8j50tbTJTwWraD3bgPdZ4=s1400" class="card-img img-fluid">
+								<h2 class="card-title text-light">Model Plane</h2>
+							</div>
+						</button> 
+					</div>
+
+
+					<div class="modal fade " id="staticBackdrop27" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header bg-dark text-light">
+									<h5 class="modal-title" id="staticBackdropLabel">Press Bracket</h5>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="bg-dark modal-body">
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhYBNHddpGdpDha27MTD1kDTlQvioT7bBZdo774FdUodYYPqImw0NlhQl_Al21wrSzLpqP1_M0kaDTBzujKd3fsIakgEzhtmuUrRL28TdDxnWSyb2mVS1Hp5-cmXHV3C65IUdskvQLvaSMCb4rIq2bl2uyMJDZnCs8qPp8j50tbTJTwWraD3bgPdZ4=s1400" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgjxACanPR0Ho1W9HCdkJtwD1-XQOcm3rW4BTZQh1N70ugHMrVun3gFQyisBMGHVCoZOZAByd4kyxPCHQpsQveaFibQWWU59G7YZXIgSpenAUWr73s6KZm900SbkYmdypoiTsWq1pnt8T-lef5wq65GwVJHMWLmYtqBdapCVFAnSFM0Bs5GbSdzNh0=s1075" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEjjkrVjZVamn_0UqjFV1Be0L9mwP6OlWhTOPcc9Nzx9vJlvr_1NqkDl1RVM7MMcYWmjpRTEGRfTVNNSlxltB4Vr1q7VGIHORlikUuxv1EfdywjPNwlqZrVL1qoGXb8Glmmcy8Ada6ARLjyeBYSnlFnttk_wzJOxXT_-5Ixv4S92wOG-URSLH3heEHk=s810" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEgej-ORxa2cfHY4HY5HaMDZlFRn3_6xQnxth-mYP5WV3QvxDqIkj7rmYHAK1BnE4SL8lFbwuoQJ-HPnTWuMFe3UVwb2IatGbxQOmFctR8pW69f3t2q1wSqCWfOp7rPnya0b1gfSKH40WNPCnq8-OKsshy-tLM07_dZo52rKd7udlQZSrZc2Y7JGlBw=s665" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEhzfnjUNU3ka1ZlkKUbin6mI7vADvsTyLep2jUhJ6zhv5TSjqP56tql9qA2mYsQYpS8TRowFnS0GS8Kroc0yxjTvtdyh1-BieRzU71FCn17XdgYmP8whxgNrzhAU43ulXMYL018fmADTrGsihNRRmrGYqP5sr9-9diRQmgRCX2rt3L_xaaHAofEaww=s704" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEh_RkyylI6jyjPEOrZrf13ZIymLoyqFQ6II1nbTk7t-vtTxXFAXhxnX_aAdNclmYvcsB22qUPUh4lR28gZQvzR15VBwCXpVKKCrVFnzevBHAb9oje7JK3SIPYt4uJGRXgWziw9LnEh779GEbEHnamjjHecKxFkVcJFEM5hyhCFn_Gu31nVUoU3T5NI=s745" loading="lazy" >
+									<img class="col-12 mb2 pb-3 img-responsive center-block modalImage" src="https://blogger.googleusercontent.com/img/a/AVvXsEi71dPlhYRff3LvBhDgY11IivVjHlnjcVjXdBMeQFtAwuJKeg3_3FGOgNB90RP97sunstRiggKyszR1JIKDSxLmzETRQJI5WUgbhhE5EGubJGAOb1YzRDZTJmhAFukRKvDdZjx_3x0Qr2L6rxjd7DUZebInvMYu_x10NiKKpAmoUvdZg9yjtbNRf-E=s720" loading="lazy" >
+
+									
+									
+									
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+</div>
+
+<!--------------Testimonials------------------------>
+<!-- <div class="testi">
+
+	<div class="testimonyHeader">
+		<h1 class="text-center">Words to our Alumni</h1>
+		<h4 class="text-center">No bragging but this is what students say about us</h4>
+	</div>
+
+
+	<div class="container testimonial mx-auto">
+
+
+		<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="5" class="active"></li>
+			</ol>
+
+			<div class="carousel-inner container ">
+				<div class="carousel-item active mx-auto">
+					<div class="col-12">
+						<div class="single-box">	
+							<div class="img-area"><img loading="lazy" class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="First slide"></div>
+							<div class="img-text">
+								<h2>person one</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="col-12">
+						<div class="single-box">	
+							<div class="img-area"><img loading="lazy" class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="First slide"></div>
+							<div class="img-text">
+								<h2>person two</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="col-12">
+						<div class="single-box">	
+							<div class="img-area"><img loading="lazy" class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="First slide"></div>
+							<div class="img-text">
+								<h2>person three</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="col-12">
+						<div class="single-box">	
+							<div class="img-area"><img loading="lazy" class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="First slide"></div>
+							<div class="img-text">
+								<h2>person four</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="col-12">
+						<div class="single-box">	
+							<div class="img-area"><img loading="lazy" class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="First slide"></div>
+							<div class="img-text">
+								<h2>person five</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="col-12">
+						<div class="single-box">	
+							<div class="img-area"><img loading="lazy" class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg" alt="First slide"></div>
+							<div class="img-text">
+								<h2>person six</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div> -->
+
+<!------------ Contact Me ------------------->
+<div class="container-fluid text-center bg-dark text-light contactme" id="contactme">
+	
+	<h1>Contact Me</h1>
+	
+	<div class="container text-white col-lg-8 col-md-8 col-sm-10 col-10 text-center mt-5">
+		<div class="row text-center">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-8">
+				<a href="mailto: sumerranaji@gmail.com" target="_blank">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<h6>sumerranaji@gmail.com</h6>
+				</a>
+				
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-8 mt-3">
+				<a href="https://www.google.com/maps/place/Shahdara,+Delhi/data=!4m2!3m1!1s0x390cfb0f509c976f:0x9ec1dbe6a1f4fd3c?sa=X&ved=2ahUKEwi98c-v9ejqAhUn7XMBHb_ACbMQ8gEwAHoECA4QAQ" target="_blank">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<h6>Shahdara,Delhi</h6>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!--------------------footer-------------------->
+
+<footer class="footer mb-0 bg-dark text-light">
+	<h6 class="text-center">&copy 2021 Developed by Sumer Rana, All rights reserved</h6>
+</footer>
+
+
+
+<!-----Script----------->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
